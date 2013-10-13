@@ -1,22 +1,22 @@
-<div id="movie" data-role="view" data-title="Movie" data-show="app.movie.movie" > 
+<div id="movie" data-role="view" data-title="Movie" data-show="app.movie.movie" >
     <header data-role="header">
         <div data-role="navbar">
-            <a id="back-button" class="nav-button" data-align="left" data-role="backbutton">Back</a>
+            <a id="back-button" data-align="left" data-role="backbutton">Back</a>
             <span data-role="view-title"></span>
         </div>
     </header>
 
-    <div id= "fmovie" ></div>
-    <button onclick="app.movie.cmdPost()">Post To Facebook</button>
+        <div id= "fmovie" ></div>
+        <button onclick="app.movie.cmdPost()">Post To Facebook</button>
     
     <!--Footer-->
     <footer data-role="footer">
         <div data-role="tabstrip">
-            <a href="#home-view" data-icon="home">Home</a>
-            <a href="views/upcoming-view.html#upcoming-view" data-icon="mostviewed">Upcoming</a>
+            <a href="#upcoming-view" data-icon="mostviewed">Upcoming</a>
             <a href="views/theaters-view.html#theaters-view" data-icon="organize">In theaters</a>
-            <a href="views/places-view.html#places-view" data-icon="search">Search</a>
+            <a href="views/search-view.html" data-icon="globe">Map Search</a>
             <a href="views/places-view.html#places-view" data-icon="camera">Capture</a>
         </div>
-    </footer>  
+    </footer>
+
 </div>
