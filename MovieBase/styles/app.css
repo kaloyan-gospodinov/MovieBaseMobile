@@ -290,6 +290,7 @@ body, html {
     }
 }
 
+/*THE DEVELOPED STYLES*/
 
 .km-ios .km-view .km-navbar {
     background-image: -webkit-gradient(linear,0 0,100% 100%,color-stop(0, rgba(0,0,0,.2)),color-stop(1, rgba(0,0,0,.8)));
@@ -308,9 +309,9 @@ body, html {
     background-color: rgb(68, 100, 143);
 }
 .km-ios .km-view .km-content {
-    background-image: -webkit-gradient(linear,0 0,100% 100%,color-stop(0, rgba(0,0,0,.2)),color-stop(1, rgba(0,0,0,.8))),url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAABCAYAAAASC7TOAAAAGklEQVR4Xm3DMREAAACCQKPYvySeO8MHML0BOrEVLMJmdzAAAAAASUVORK5CYII=);
-    background-image: -moz-linear-gradient(0 0,100% 100%,rgba(0,0,0,.2),rgba(0,0,0,.8)),url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAABCAYAAAASC7TOAAAAGklEQVR4Xm3DMREAAACCQKPYvySeO8MHML0BOrEVLMJmdzAAAAAASUVORK5CYII=);
-    background-image: -ms-linear-gradient(0 0,100% 100%,rgba(0,0,0,.2),rgba(0,0,0,.8)),url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAABCAYAAAASC7TOAAAAGklEQVR4Xm3DMREAAACCQKPYvySeO8MHML0BOrEVLMJmdzAAAAAASUVORK5CYII=);
+    background-image: -webkit-gradient(linear,50% 0,50% 100%,color-stop(0, rgba(0,0,0,.2)),color-stop(.5, rgba(0,0,0,.4)),color-stop(0, rgba(0,0,0,.45)),color-stop(1, rgba(0,0,0,.4))),url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAABCAYAAAASC7TOAAAAGklEQVR4Xm3DMREAAACCQKPYvySeO8MHML0BOrEVLMJmdzAAAAAASUVORK5CYII=);
+    background-image: -moz-linear-gradient(50% 0,50% 100%,rgba(0,0,0,.2),rgba(0,0,0,.45),rgba(0,0,0,.4) 50%,rgba(0,0,0,.4)),url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAABCAYAAAASC7TOAAAAGklEQVR4Xm3DMREAAACCQKPYvySeO8MHML0BOrEVLMJmdzAAAAAASUVORK5CYII=);
+    background-image: -ms-linear-gradient(50% 0,50% 100%,rgba(0,0,0,.2),rgba(0,0,0,.45),rgba(0,0,0,.4) 50%,rgba(0,0,0,.4)),url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAABCAYAAAASC7TOAAAAGklEQVR4Xm3DMREAAACCQKPYvySeO8MHML0BOrEVLMJmdzAAAAAASUVORK5CYII=);
     background-repeat: repeat,repeat;
     background-position: 0 0,0% 0%;
     background-color: rgb(196, 204, 213);

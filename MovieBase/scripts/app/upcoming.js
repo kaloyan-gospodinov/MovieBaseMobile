@@ -14,7 +14,10 @@ var app = app || {};
                 dataSource: movies.movies,
                 template: kendo.template($("#template").html())
             });
-        });        
+        }), function (error) {
+            navigator.notification.vibrate(2000);
+            navigator.notification.alert("Error while reading upcoming movies!");
+        };      
     }
     a.upcoming={
         init:init

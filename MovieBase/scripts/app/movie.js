@@ -2,7 +2,6 @@ var app = app || {};
 
 (function(m) {
     var title;
-    var poster;
     var link;
     
     function movie(e) {
@@ -18,9 +17,10 @@ var app = app || {};
             $(movieTag).append("<img src=" + movie.posters.profile + " />");
             $(movieTag).append("<p>" + movie.synopsis + "</p>");
             title = movie.title;
-            poster = movie.posters.profile;
             link = movie.links.alternate;
         }), function (error) {
+            navigator.notification.vibrate(2000);
+            navigator.notification.alert("Error while reading specific movie details!");
         };         
         
         jso_registerRedirectHandler(function(url) {

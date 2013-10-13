@@ -12,6 +12,8 @@ var app = app || {};
                 template: kendo.template($("#theaters-template").html())
             });
         }), function (error) {
+            navigator.notification.vibrate(2000);
+            navigator.notification.alert("Error while reading movies in theaters!");
         };      
         
         
