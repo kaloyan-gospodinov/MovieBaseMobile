@@ -9,23 +9,32 @@ var app = app || {};
         .then(function(theaters) {
             $("#theaters-holder").kendoMobileListView({
                 dataSource: theaters.movies,
-                template: kendo.template($("#theaters-template").html()),
-                 click: function(e) {
-                    //console.log(e.dataItem.title, e.dataItem.synopsis);
-                     var movie = document.getElementById("movie");
-                     movie.innerHtml="";
-                     $(movie).append("<p>" + e.dataItem.title + "</p>");
-                     $(movie).append("<img src=" +  e.dataItem.posters.thumbnail + "/>");
-                     $(movie).append("<p>" +  e.dataItem.synopsis + "</p>");
-                 }
-                 
+                template: kendo.template($("#theaters-template").html())
             });
         });      
         
         
     }
     
+    function movie(e) {
+         var div = document.getElementById("fmovie");
+            while (div.firstChild){
+                div.removeChild(div.firstChild);
+            }
+        
+         httpRequest.getJSON("http://api.rottentomatoes.com/api/public/v1.0/movies/" + e.view.params.id + ".json?apikey=s6k62d4zdqbr3tetvar6meqm")
+         .then(function(movie){
+             var movieTag = document.getElementById("fmovie");
+             $(movieTag).append("<h1>" + movie.title + "</h1>");
+             $(movieTag).append("<img src=" +  movie.posters.profile + " />");
+             $(movieTag).append("<p>" +  movie.synopsis + "</p>");
+             });
+         
+    }
+    
     t.theaters={
-        init:init
+        init:init,
+        movie: movie,
+        
     }
 }(app));
