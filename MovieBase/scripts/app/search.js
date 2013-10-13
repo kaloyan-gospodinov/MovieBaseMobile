@@ -125,8 +125,8 @@ var app = app || {};
         }
 					  
         // Handle any errors we may face
-        var element = document.getElementById('map_canvas');
-        element.innerHTML = errString;
+        //var element = document.getElementById('map_canvas');
+        navigator.notification.alert(errString);
     }
     b.search = {
         buildMap:buildMap
